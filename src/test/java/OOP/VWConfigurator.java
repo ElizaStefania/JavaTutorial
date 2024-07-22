@@ -10,12 +10,13 @@ public class VWConfigurator extends ConfiguratorMasina{
     public String roti;
     public String tapiterie;
     public List<String> dotariOptionale;
+    private Double pretStandard;
+    private Double pretFinal;
 
 
-
-    public VWConfigurator(String marca, String model, Integer an, Double pretStandard, Double pretFinal, String linieDeEchipare, String motor, String vopsea,
+    public VWConfigurator(String marca, String model, Integer an, String linieDeEchipare, String motor, String vopsea,
                           String roti, String tapiterie, List<String> dotariOptionale) {
-        super(marca, model, an, pretStandard, pretFinal);
+        super(marca, model, an);
         this.linieDeEchipare = linieDeEchipare;
         this.motor = motor;
         this.vopsea = vopsea;
@@ -36,5 +37,45 @@ public class VWConfigurator extends ConfiguratorMasina{
         for (Integer i = 0; i<dotariOptionale.size(); i++){
             System.out.println(dotariOptionale.get(i));
         }
+    }
+
+    public String getLinieDeEchipare() {
+        return linieDeEchipare;
+    }
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public String getVopsea() {
+        return vopsea;
+    }
+
+    public String getRoti() {
+        return roti;
+    }
+
+    public String getTapiterie() {
+        return tapiterie;
+    }
+
+    public List<String> getDotariOptionale() {
+        return dotariOptionale;
+    }
+
+    public Double getPretStandard() {
+        return pretStandard;
+    }
+
+    public Double getPretFinal() {
+        return pretFinal;
+    }
+
+    public void setPretStandard(Double pretStandard) {
+        this.pretStandard = pretStandard;
+    }
+
+    public void setPretFinal(Double pretFinal) {
+        this.pretFinal = pretFinal;
     }
 }
