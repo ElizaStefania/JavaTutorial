@@ -4,12 +4,12 @@ import java.util.List;
 
 public class VWConfigurator extends ConfiguratorMasina{
 
-    public String linieDeEchipare;
-    public String motor;
-    public String vopsea;
-    public String roti;
-    public String tapiterie;
-    public List<String> dotariOptionale;
+    private String linieDeEchipare;
+    private String motor;
+    private String vopsea;
+    private String roti;
+    private String tapiterie;
+    private List<String> dotariOptionale;
     private Double pretStandard;
     private Double pretFinal;
 
@@ -37,6 +37,15 @@ public class VWConfigurator extends ConfiguratorMasina{
         for (Integer i = 0; i<dotariOptionale.size(); i++){
             System.out.println(dotariOptionale.get(i));
         }
+    }
+
+    //Polimorfis dinamic
+    public void pornesteMotor(){
+        System.out.println("Masinile Dacia pornesc de la buton");
+    }
+
+    public void deschidereGeam(){
+        System.out.println("Geamurile masinii se deschid electric");
     }
 
     public String getLinieDeEchipare() {

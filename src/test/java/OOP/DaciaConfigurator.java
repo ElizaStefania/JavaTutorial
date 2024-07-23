@@ -51,6 +51,15 @@ public class DaciaConfigurator  extends ConfiguratorMasina {
         calculPretFinal();
     }
 
+    //Aplicam Polimorfismul dinamic
+    public void pornesteMotor(){
+        System.out.println("Masinile Dacia pornesc de la buton");
+    }
+
+    public void deschidereGeam(){
+        System.out.println("Geamurile masinii se deschid electric");
+    }
+
     //Trebuie sa determinam pretul standard in functie de model
     public void calculPretStandard(){
         if(getModel().equals("Logan")){
