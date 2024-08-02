@@ -13,7 +13,7 @@ public class Sportiv {
     //Dintr-o clasa putem defini mai multe obiecte
     //Obiectele se diferentiaza prin nume si valorile date
     //Un obiect se instantiaza folosind cuvantul "new"
-    //Un obiect se poate defini im orice clasa din orce pachet
+    //Un obiect se poate defini in orice clasa din orice pachet
     //In momentul cand instantam un obiect putem avea acces la toate variabilele/metodele din clasa
 
     public String nume;
